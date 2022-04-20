@@ -1,4 +1,8 @@
-const githubProfileLink = "https://api.github.com/users/DGouron";
+//Made by Damien Gouron
+//Use this component as you wish :)
+//Feel free to contribute.
+
+const githubProfileLink = "https://api.github.com/users/DGouron"; //Replace by your profile link
 const showConsoleDebug = true;
 
 fetch(githubProfileLink)
@@ -17,7 +21,7 @@ function showGithubStats(dataToShow){
         gitHubComponent.appendChild(constructProfileLinkButton(constructProfileLink()));
         
     let gitHubName = document.createElement('div');
-        gitHubName.innerHTML = 'Github Stats Component <br /><em> Githbug Name : ' + dataToShow.name + '</em><br />';
+        gitHubName.innerHTML = 'Github Stats Component <br /><em> Github Name : ' + dataToShow.name + '</em><br />';
         gitHubName.classList.add('gitHubComponentElement');
         gitHubComponent.appendChild(gitHubName);
 
